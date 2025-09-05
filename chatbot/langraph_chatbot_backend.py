@@ -12,7 +12,7 @@ import os
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 # Initialize the model using the API key explicitly
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key = api_key)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key = api_key)
 
 class ChatState(TypedDict):
 
